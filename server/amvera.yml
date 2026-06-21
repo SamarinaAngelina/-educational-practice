@@ -1,9 +1,0 @@
-meta:
-  environment: node
-  rootPath: server    
-  toolchain:
-    name: npm
-    version: 20
-run:
-  scriptName: server.js
-  containerPort: 3000
