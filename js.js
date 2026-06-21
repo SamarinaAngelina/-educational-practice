@@ -1,4 +1,4 @@
-let SERVER_URL = 'http://localhost:3000/api';
+let SERVER_URL = 'https://amvera.io';
 
 let keywordInput = document.getElementById('keywordInput');
 let searchBtn = document.getElementById('searchBtn');
