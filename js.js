@@ -149,8 +149,13 @@ async function renderLocalStorageList() {
 function viewContent(url) {
     let cache = JSON.parse(localStorage.getItem('downloaded_content') || '{}');
     
+    let iframe = document.getElementById('offlineIframe');
+    let placeholder = document.getElementById('iframePlaceholder');
+
     if (cache[url]) {
-        contentViewer.innerHTML = `<pre>${escapeHtml(cache[url].content)}</pre>`;
+        placeholder.style.display = 'none';
+        iframe.style.display = 'block';
+        iframe.srcdoc = cache[url].content;
     }
 }
 function escapeHtml(text) {
