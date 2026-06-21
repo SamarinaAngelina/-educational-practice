@@ -1,6 +1,5 @@
 meta:
   environment: node
-  rootPath: server
   toolchain:
     name: npm
     version: 18
