@@ -8,9 +8,18 @@ app.use(express.json());
 
 
 const keywordDatabase = {
-    "news": ["https://ycombinator.com", "https://reddit.com"],
-    "books": ["https://gutenberg.org", "https://gutenberg.org"],
-    "images": ["https://picsum.photos", "https://typicode.com"]
+    "news": [
+        "http://lib.ru",
+        "https://rkn.gov.ru"
+    ],
+    "books": [
+        "http://lib.ru",
+        "http://lib.ru"
+    ],
+    "images": [
+        "https://picsum.photos",
+        "https://typicode.com"
+    ]
 };
 
 
