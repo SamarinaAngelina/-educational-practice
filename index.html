@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Клиент-Сервер Сборщик</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Сборщик информации</h1>
+
+        
+        <div class="box">
+            <h3>1. Поиск URL по ключевому слову</h3>
+            <div class="search-group">
+                <input type="text" id="keywordInput" placeholder="Введите слово (news, books...)">
+                <button id="searchBtn">Найти</button>
+            </div>
+            <div id="errorContainer" class="error"></div>
+            <ul id="urlList"></ul>
+        </div>
+
+        
+        <div class="box">
+            <h3>2. Статус текущей загрузки</h3>
+            <div id="statusText">Ожидание выбора URL</div>
+            <div id="progressBar" class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <h3>3. Локальное хранилище (LocalStorage)</h3>
+            <button id="refreshBtn" style="margin-bottom: 10px;">Обновить список</button>
+            <ul id="offlineList"></ul>
+            
+            <h4>Просмотр контента:</h4>
+            <div id="contentViewer">
+                <pre style="color: #a0aec0;">Выберите элемент для просмотра</pre>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js.js"></script>
+</body>
+</html>
