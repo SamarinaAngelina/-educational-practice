@@ -1,4 +1,4 @@
-let SERVER_URL = 'https://amvera.io';
+let SERVER_URL = 'https://sdsds-foxickl.amvera.io/api';
 
 let keywordInput = document.getElementById('keywordInput');
 let searchBtn = document.getElementById('searchBtn');
